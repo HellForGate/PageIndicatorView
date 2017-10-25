@@ -734,7 +734,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
      * 设置是否显示页码
      * @param isShow 是否显示
      */
-    private void setShowPageNumber(boolean isShow){
+    public void setShowPageNumber(boolean isShow){
         manager.indicator().setShowPageNumber(isShow);
         invalidate();
     }
@@ -743,7 +743,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
      * 设置页码字体选中颜色
      * @param color 颜色
      */
-    private void setPageNumberSelectColor(int color){
+    public void setPageNumberSelectColor(int color){
         manager.indicator().setPageNumberSelectColor(color);
         invalidate();
     }
@@ -752,7 +752,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
      * 设置页码字体未选中颜色
      * @param color 颜色
      */
-    private void setPageNumberUnSelectColor(int color){
+    public void setPageNumberUnSelectColor(int color){
         manager.indicator().setPageNumberUnSelectColor(color);
         invalidate();
     }
