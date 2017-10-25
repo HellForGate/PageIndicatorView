@@ -1,5 +1,6 @@
 package com.rd.draw.data;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.view.View;
 import com.rd.animation.type.AnimationType;
@@ -39,6 +40,10 @@ public class Indicator {
     private int selectedPosition;
     private int selectingPosition;
     private int lastSelectedPosition;
+
+    private boolean isShowPageNumber;
+    private int pageNumberUnSelectColor = Color.WHITE;
+    private int pageNumberSelectColor = Color.RED;;
 
     private int viewPagerId = View.NO_ID;
 
@@ -248,5 +253,29 @@ public class Indicator {
 
     public void setViewPagerId(int viewPagerId) {
         this.viewPagerId = viewPagerId;
+    }
+
+    public boolean isShowPageNumber() {
+        return isShowPageNumber;
+    }
+
+    public void setShowPageNumber(boolean showPageNumber) {
+        isShowPageNumber = showPageNumber;
+    }
+
+    public int getPageNumberUnSelectColor() {
+        return pageNumberUnSelectColor;
+    }
+
+    public void setPageNumberUnSelectColor(int pageNumberUnSelectColor) {
+        this.pageNumberUnSelectColor = pageNumberUnSelectColor;
+    }
+
+    public int getPageNumberSelectColor() {
+        return pageNumberSelectColor;
+    }
+
+    public void setPageNumberSelectColor(int pageNumberSelectColor) {
+        this.pageNumberSelectColor = pageNumberSelectColor;
     }
 }
